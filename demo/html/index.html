@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <h1>第一次</h1>
+    <ul>
+        <li>&nbsp;</li>
+        <li>&lt</li>
+        <li>&gt;</li>
+        <li>&#60</li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div>
+</body>
+<script>
+    //执行上下文
+//    var a;
+    console.log(a);
+    var a=10;
+    console.log(this);
+    console.log(aa);
+    function aa(){
+        return x=10
+    }
+    aa();
+    console.log(x)
+    //闭包
+    function mytest( ){
+        var test=10;
+        return function( ){
+            test++;
+            alert(test);
+        }
+    }
+    var atest = new mytest( ); //引用返回的函数
+//    atest( );  // 11
+//    atest( ); //  12
+//    atest( ); //  12
+//    atest( ); //  12
+//    atest( ); //  12
+</script>
+</html>
