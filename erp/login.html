@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登陆</title>
+    <link href="http://cdn.bootcss.com/bootstrap/2.3.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            list-style: none;
+        }
+        #login-top{
+            background: url("img/logoImages.png") no-repeat;
+            background-size:100% 100%;
+          height: 250px;
+            padding-top: 150px;
+
+        }
+        #login-top>p{
+            font-size: 20px;
+            text-align: center;
+            padding-bottom: 10px;
+        }
+        #loginBox{
+
+        }
+        .textBox{
+            margin: 30px auto 0;
+            width: 400px;
+            overflow: hidden;
+        }
+        .textBox>span{
+            display: inline-block;
+            min-width: 100px;
+            text-align: right;
+            margin-right: 20px;
+        }
+        .textBox>b{
+            display: inline-block;
+            width: 80px;
+            height: 30px;
+            border:1px solid #999;
+        }
+        .yanZen>input{
+            width: 110px;
+        }
+        #loginBtn{
+            display: block;
+            width: 100px;
+            height: 30px;
+
+            line-height: 30px;
+            text-align: center;
+            background: #188eee;
+           /*letter-spacing: 20px;*/
+            font-size: 20px;
+            margin: 20px auto;
+        }
+
+    </style>
+</head>
+<body>
+<div id="login-top">
+        <p>资源管理系统</p>
+        <p>Enterprise Support Management System</p>
+</div>
+<form id="loginBox">
+    <div class="textBox">
+        <span>用户名:</span><input type="text">
+    </div>
+    <div class="textBox">
+        <span>请输入密码:</span><input type="text">
+    </div>
+    <div class="textBox yanZen">
+        <span>请输入验证码:</span><input type="text">
+        <!--<b></b>-->
+    </div>
+    <input id="loginBtn" type="submit" value="登陆" >
+</form>
+</body>
+</html>
